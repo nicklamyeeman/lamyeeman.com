@@ -1,8 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import { getFirebaseValue } from './firebase/firebase_utils';
 
-function App() {
+import './App.css';
+import { useApp } from './fetchers/app';
+
+const App = () => {
+  const app = useApp();
+  console.log(app)
+
   return (
     <div className="App">
       <header className="App-header">
@@ -22,5 +28,4 @@ function App() {
     </div>
   );
 }
-
-export default App;
+export default App

@@ -1,6 +1,5 @@
 {
   "hosting": {
-    "site": "lamyeeman-3fa9c",
     "public": "public",
     "ignore": [
       "firebase.json",
