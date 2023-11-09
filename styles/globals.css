@@ -1,0 +1,5 @@
+/* Add a comment at first line to avoid bug in css ordering https://github.com/vercel/next.js/issues/16630#issuecomment-1037305875  */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
