@@ -24,9 +24,16 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["src/components/*"],
+      "@/locales/*": ["src/locales/*"],
+      "@/types/*": ["src/types/*"]
+    }
   },
   "include": [
+    "app",
     "src",
     ".next/types/**/*.ts"
   ],
