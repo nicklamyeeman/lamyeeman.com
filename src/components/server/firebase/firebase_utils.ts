@@ -1,17 +1,19 @@
+import "../firebase/firebase_init";
+
 import { DataSnapshot as FirebaseDataSnapshot } from "firebase/database";
 
 import {
-    get,
-    getDatabase,
-    off,
-    onDisconnect,
-    onValue,
-    push,
-    query,
-    QueryConstraint,
-    ref,
-    set,
-    update,
+  get,
+  getDatabase,
+  off,
+  onDisconnect,
+  onValue,
+  push,
+  query,
+  QueryConstraint,
+  ref,
+  set,
+  update,
 } from "firebase/database";
 
 interface DataSnapshot<T = any> extends FirebaseDataSnapshot {

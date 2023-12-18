@@ -18,8 +18,16 @@ export default async function RootLayout({
   };
 }) {
   return (
-    <Providers locale={params.locale}>
-      {children}
-    </Providers>
+    <html lang={params.locale} className="w-full min-h-screen h-full">
+      <body className="w-full h-auto m-0 p-0">
+        <Providers locale={params.locale}>
+          <main>
+            <div className="font-sans min-w-screen w-full min-h-screen h-full flex flex-col items-center bg-gradient-to-br from-blue-950 to-amber-950">
+              <div className="max-w-[1440px] w-full">{children}</div>
+            </div>
+          </main>
+        </Providers>
+      </body>
+    </html>
   );
 }
