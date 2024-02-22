@@ -1,0 +1,21 @@
+/* Add a comment at first line to avoid bug in css ordering https://github.com/vercel/next.js/issues/16630#issuecomment-1037305875  */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .custom-scrollbar::-webkit-scrollbar-track {
+        border: 0;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        background-color: #d1d3d6;
+        border-radius: 100px;
+    }
+}

@@ -90,4 +90,5 @@ yarn-debug.log*
 yarn-error.log*
 
 .next
+.vscode
 .env
