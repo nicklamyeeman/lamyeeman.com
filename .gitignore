@@ -92,3 +92,4 @@ yarn-error.log*
 .next
 .vscode
 .env
+.runtimeconfig.json
