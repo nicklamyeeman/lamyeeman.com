@@ -1,4 +1,9 @@
 {
-    "test": "test-en",
-    "test2": "client-test-en"
+    "Main.Lang.Menu.Home": "Home",
+    "Main.Lang.Menu.About": "About",
+    "Main.Lang.Menu.Projects": "Projects",
+    "Main.Lang.Menu.Contact": "Contact",
+    "Main.Lang.Copyright": "© 2024 LAMYEEMAN - All rights reserved",
+    "Main.Lang.LegalNotes": "Legal notes",
+    "Main.Lang.LegalNotes.Content": "Publisher:{br}Name: Nick LAM YEE MAN{br}Email: nick@lamyeeman.com{br}Website: lamyeeman.com{br}{br}Host:{br}The website lamyeeman.com is hosted by Firebase Hosting, a Google hosting service{br}Address: Google LLC, 1600 Amphitheatre Parkway, Mountain View, California 94043 USA{br}{br}Intellectual Property:{br}The content of this website (texts, images, videos, etc.) is the exclusive property of Nick LAM YEE MAN, unless otherwise indicated. Any reproduction or use without prior written permission is strictly prohibited.{br}{br}External Links:{br}This site contains links to third-party sites (GitHub, LinkedIn, Instagram, TikTok, etc.) for informational purposes or to reference projects. Nick LAM YEE MAN assumes no responsibility for the content of these external sites.{br}{br}Testimonials:{br}The testimonials on this site are published with the consent of the individuals involved. They represent the personal opinions of their authors and do not necessarily reflect the views of Nick LAM YEE MAN.{br}{br}Cookies:{br}This site do not use cookies.{br}{br}Personal Data:{br}Nick LAM YEE MAN is committed to respecting the confidentiality of the personal data of users of this site. The data collected will only be used for the intended purpose and will not be shared with third parties without prior consent.{br}{br}Modification of Legal Notices:{br}Nick LAM YEE MAN reserves the right to modify these legal notices at any time. Users of the site are encouraged to regularly check this page for any updates.{br}{br}Last Updated:{br}These legal notices were last updated on February 22nd 2024.{br}{br}For any questions regarding these legal notices, you can contact Nick LAM YEE MAN at the email address mentioned above."
 }

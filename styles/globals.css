@@ -10,12 +10,12 @@
     }
 
     .custom-scrollbar::-webkit-scrollbar {
-        width: 5px;
-        height: 5px;
+        width: 10px;
+        height: 10px;
     }
 
     .custom-scrollbar::-webkit-scrollbar-thumb {
-        background-color: #c1c1c1;
+        background-color: #d1d3d6;
         border-radius: 100px;
     }
 }

@@ -1,4 +1,4 @@
-import getIntl from "@/components/server/intl/intl";
+import { HomePage } from "@/components/pages/home/home_page";
 import { Locales } from "@/types/intl";
 
 export default async function Page({
@@ -6,8 +6,9 @@ export default async function Page({
 }: {
   params: { locale: Locales };
 }) {
-  const { formatMessage } = await getIntl(params.locale);
   return (
-    <div className="text-2xl font-bold">{formatMessage({ id: "test" })}</div>
+    <div className="text-2xl font-bold">
+      <HomePage locale={params.locale} />
+    </div>
   );
 }

@@ -17,7 +17,11 @@ const localesMessages = {
   en,
 };
 
-const theme = createTheme({});
+const theme = createTheme({
+  typography: {
+    fontFamily: "Segoe UI",
+  },
+});
 
 const ThemeRegistry = (props: any) => {
   const { options, children } = props;
