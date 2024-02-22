@@ -5,7 +5,7 @@ import CredentialsProvider from "next-auth/providers/credentials";
 
 const handler = NextAuth({
   pages: {
-    signIn: "/login",
+    signIn: "/signin",
   },
   providers: [
     CredentialsProvider({
@@ -30,3 +30,4 @@ const handler = NextAuth({
 });
 
 export { handler as GET, handler as POST };
+

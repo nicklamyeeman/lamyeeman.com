@@ -1,4 +1,4 @@
-import "../firebase/firebase_init";
+import "./firebase_init";
 
 import { DataSnapshot as FirebaseDataSnapshot } from "firebase/database";
 

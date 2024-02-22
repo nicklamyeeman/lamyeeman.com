@@ -1,5 +1,16 @@
 {
   "projects": {
     "default": "lamyeeman-3fa9c"
-  }
+  },
+  "targets": {
+    "lamyeeman-3fa9c": {
+      "database": {
+        "main": [
+          "lamyeeman-3fa9c-default-rtdb"
+        ]
+      },
+      "storage": {}
+    }
+  },
+  "etags": {}
 }
