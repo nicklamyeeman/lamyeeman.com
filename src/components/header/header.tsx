@@ -26,7 +26,7 @@ export const Header: React.FC<{ locale: Locales }> = async ({ locale }) => {
               color="whitesmoke"
               className="font-semibold tracking-wider"
             >
-              {formatMessage({ id: "Main.Lang.Menu.Home" })}
+              {formatMessage({ id: "Main.Header.Menu.Home" })}
             </Typography>
           </Link>
           <Link href="/" className="text-stone-50 no-underline">
@@ -34,7 +34,7 @@ export const Header: React.FC<{ locale: Locales }> = async ({ locale }) => {
               color="whitesmoke"
               className="font-semibold tracking-wider"
             >
-              {formatMessage({ id: "Main.Lang.Menu.About" })}
+              {formatMessage({ id: "Main.Header.Menu.About" })}
             </Typography>
           </Link>
           <Link href="/" className="text-stone-50 no-underline">
@@ -42,7 +42,7 @@ export const Header: React.FC<{ locale: Locales }> = async ({ locale }) => {
               color="whitesmoke"
               className="font-semibold tracking-wider"
             >
-              {formatMessage({ id: "Main.Lang.Menu.Projects" })}
+              {formatMessage({ id: "Main.Header.Menu.Projects" })}
             </Typography>
           </Link>
           <Link href="/" className="text-stone-50 no-underline">
@@ -50,7 +50,7 @@ export const Header: React.FC<{ locale: Locales }> = async ({ locale }) => {
               color="whitesmoke"
               className="font-semibold tracking-wider"
             >
-              {formatMessage({ id: "Main.Lang.Menu.Contact" })}
+              {formatMessage({ id: "Main.Header.Menu.Contact" })}
             </Typography>
           </Link>
         </div>

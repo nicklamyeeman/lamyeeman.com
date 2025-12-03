@@ -5,12 +5,12 @@ import { CacheProvider } from "@emotion/react";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { SessionProvider } from "next-auth/react";
 import { useServerInsertedHTML } from "next/navigation";
-import React from "react";
 import { IntlProvider } from "react-intl";
 
 import en from "@/locales/en.json";
 import fr from "@/locales/fr.json";
 import { Locales } from "@/types/intl";
+import { useState } from "react";
 
 const localesMessages = {
   fr,
@@ -19,14 +19,14 @@ const localesMessages = {
 
 const theme = createTheme({
   typography: {
-    fontFamily: "Segoe UI",
+    fontFamily: "Segoe UI, -apple-system, BlinkMacSystemFont",
   },
 });
 
 const ThemeRegistry = (props: any) => {
   const { options, children } = props;
 
-  const [{ cache, flush }] = React.useState(() => {
+  const [{ cache, flush }] = useState(() => {
     const cache = createCache(options);
     cache.compat = true;
     const prevInsert = cache.insert;

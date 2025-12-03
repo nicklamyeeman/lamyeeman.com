@@ -10,10 +10,10 @@ export const Footer: React.FC<{ locale: Locales }> = async ({ locale }) => {
     <div className="w-full flex items-center py-6 bg-stone-800">
       <div className="w-full flex items-center justify-center">
         <Typography className="flex text-center gap-2 text-stone-50">
-          {formatMessage({ id: "Main.Lang.Copyright" })}
+          {formatMessage({ id: "Main.Footer.Copyright" })}
           <span>{"-"}</span>
           <Link href={"/legalnotes"} className="text-stone-50">
-            <span>{formatMessage({ id: "Main.Lang.LegalNotes" })}</span>
+            <span>{formatMessage({ id: "Main.Footer.LegalNotes" })}</span>
           </Link>
         </Typography>
       </div>

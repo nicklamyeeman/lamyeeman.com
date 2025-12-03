@@ -16,7 +16,7 @@
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.10",
     "firebase": "^9.17.1",
-    "next": "^14.0.1",
+    "next": "^14.1.0",
     "next-auth": "^4.24.5",
     "next-i18n-router": "^5.0.1",
     "react": "^18.2.0",
@@ -27,25 +27,12 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
     "start": "next start"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
     ]
   },
   "devDependencies": {

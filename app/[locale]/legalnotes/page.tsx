@@ -19,7 +19,7 @@ export default async function LegalNotesPage({
       </Typography>
       <Typography className="w-full text-left text-sm leading-tight my-4">
         {formatMessage(
-          { id: "Main.Lang.LegalNotes.Content" },
+          { id: "Main.Footer.LegalNotes.Content" },
           { br: (<br />) as any }
         )}
       </Typography>
