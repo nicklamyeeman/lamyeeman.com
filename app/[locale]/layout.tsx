@@ -20,18 +20,18 @@ export default async function RootLayout({
   };
 }) {
   return (
-    <html lang={params.locale} className="w-full min-h-screen h-full">
-      <body className="w-full h-auto m-0 p-0 custom-scrollbar">
+    <html lang={params.locale} className="w-full h-full min-h-screen">
+      <body className="w-full h-auto p-0 m-0 custom-scrollbar">
         <Providers locale={params.locale}>
           <header>
             <Header locale={params.locale} />
           </header>
-          <main className="font-sans min-w-screen w-full min-h-screen h-full relative flex flex-col items-center bg-gradient-to-br from-stone-50 to-rose-50 via-violet-50">
+          <main className="relative flex flex-col items-center w-full h-full min-h-screen font-sans min-w-screen bg-gradient-to-br from-indigo-50 to-rose-50 via-violet-50">
             <div className="flex flex-col max-w-[1440px] w-full py-4 pt-14">
               {children}
             </div>
           </main>
-          <footer className="w-full flex flex-col">
+          <footer className="flex flex-col w-full">
             <Footer locale={params.locale} />
           </footer>
         </Providers>

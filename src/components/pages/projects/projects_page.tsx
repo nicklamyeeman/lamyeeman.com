@@ -1,11 +1,11 @@
 import { Locales } from "@/types/intl";
-import { HomePageProjects } from "./projects/home_page_projects";
+import { ProjectsPageCards } from "./cards/projects_page_cards";
 
-export const HomePage: React.FC<{ locale: Locales }> = ({ locale }) => {
+export const ProjectsPage: React.FC<{ locale: Locales }> = ({ locale }) => {
   return (
     <div className="flex flex-col items-center justify-center w-full">
       {/* <Typography>About</Typography> */}
-      <HomePageProjects locale={locale} />
+      <ProjectsPageCards locale={locale} />
       {/* <Typography>Testimonials</Typography> */}
       {/* <Typography>Contact</Typography> */}
       {/* <Typography className="my-20">This site is under construct</Typography> */}

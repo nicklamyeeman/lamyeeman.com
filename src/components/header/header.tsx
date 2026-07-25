@@ -11,17 +11,17 @@ import getIntl from "../server/intl/intl";
 export const Header: React.FC<{ locale: Locales }> = async ({ locale }) => {
   const { formatMessage } = await getIntl(locale);
   return (
-    <div className="w-full h-12 fixed top-0 left-0 flex items-center justify-center bg-stone-900 z-10 py-1 drop-shadow-md">
-      <div className="w-full max-w-[1440px] flex items-center justify-between">
+    <div className="fixed top-0 left-0 z-10 flex items-center justify-center w-full h-12 py-1 bg-stone-900 drop-shadow-md">
+      <div className="px-10 w-full max-w-[1440px] flex items-center justify-between">
         <Link href={"/"} className="relative w-10 h-10">
           <Image
             alt="logo"
             src={Logo}
-            className="w-full h-full object-contain"
+            className="object-contain w-full h-full"
           />
         </Link>
-        <div className="flex w-full gap-8 items-center justify-end">
-          <Link href="/" className="text-stone-50 no-underline">
+        <div className="items-center justify-end hidden w-full gap-8 sm:flex">
+          <Link href="/" className="no-underline text-stone-50">
             <Typography
               color="whitesmoke"
               className="font-semibold tracking-wider"
@@ -29,15 +29,15 @@ export const Header: React.FC<{ locale: Locales }> = async ({ locale }) => {
               {formatMessage({ id: "Main.Header.Menu.Home" })}
             </Typography>
           </Link>
-          <Link href="/" className="text-stone-50 no-underline">
+          {/* <Link href="/" className="no-underline text-stone-50">
             <Typography
               color="whitesmoke"
               className="font-semibold tracking-wider"
             >
               {formatMessage({ id: "Main.Header.Menu.About" })}
             </Typography>
-          </Link>
-          <Link href="/" className="text-stone-50 no-underline">
+          </Link> */}
+          <Link href="/projects" className="no-underline text-stone-50">
             <Typography
               color="whitesmoke"
               className="font-semibold tracking-wider"
@@ -45,14 +45,14 @@ export const Header: React.FC<{ locale: Locales }> = async ({ locale }) => {
               {formatMessage({ id: "Main.Header.Menu.Projects" })}
             </Typography>
           </Link>
-          <Link href="/" className="text-stone-50 no-underline">
+          {/* <Link href="/" className="no-underline text-stone-50">
             <Typography
               color="whitesmoke"
               className="font-semibold tracking-wider"
             >
               {formatMessage({ id: "Main.Header.Menu.Contact" })}
             </Typography>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>

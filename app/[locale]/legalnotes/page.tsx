@@ -10,17 +10,17 @@ export default async function LegalNotesPage({
   const { formatMessage } = await getIntl(params.locale);
 
   return (
-    <div className="w-full flex flex-col">
+    <div className="flex flex-col w-full">
       <Typography
         component="h1"
-        className="w-full text-center text-2xl font-bold my-2"
+        className="w-full my-2 text-2xl font-bold text-center"
       >
-        {formatMessage({ id: "Main.Lang.LegalNotes" })}
+        {formatMessage({ id: "Main.Footer.LegalNotes" })}
       </Typography>
-      <Typography className="w-full text-left text-sm leading-tight my-4">
+      <Typography className="w-full my-4 text-sm leading-tight text-left">
         {formatMessage(
           { id: "Main.Footer.LegalNotes.Content" },
-          { br: (<br />) as any }
+          { br: (<br />) as any },
         )}
       </Typography>
     </div>
